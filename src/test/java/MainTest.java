@@ -1,5 +1,5 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class MainTest {
 
@@ -13,7 +13,7 @@ public class MainTest {
         double result = Main.calculateCircleArea(r);
 
         //assert
-        Assert.assertTrue(expected == result);
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class MainTest {
         double result = Main.calculateCircleLength(r);
 
         //assert
-        Assert.assertTrue(expected == result);
+        Assertions.assertEquals(expected, result);
     }
 }
